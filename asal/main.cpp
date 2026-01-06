@@ -8,18 +8,24 @@ int main()
     cin>>s;
     bool asal=true;
 
+    if (s<=1)
+    {
+        asal=false;
+        cout<<s<<" sayısı asal değildir;
+    }
+
     for (int i=2;i<=s/2;i++)
     {
         if (s%i==0)
             {
                 asal=false;
-                cout << s << " sayisi asal degildir." << endl;
+                cout << s << " sayısı asal değildir." << endl;
                 break;
             }
     }
     if (asal==true)
     {
-        cout << s << " sayisi asaldir." << endl;
+        cout << s << " sayısı asaldır." << endl;
     }
     return 0;
 
